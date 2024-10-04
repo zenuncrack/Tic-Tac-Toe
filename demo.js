@@ -72,7 +72,9 @@ const resetGame = () => {
     turnO = true;
     enablebox();
     msgContainer.classList.add('hide')
-    resetBtn.classList.resetBtn("hide")
+    resetBtn.classList.remove("hide");
+    resetBtn.classList.add("reset-btn")
+    
 }
 
 resetBtn.addEventListener("click", resetGame);
